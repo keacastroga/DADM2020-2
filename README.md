@@ -4,3 +4,6 @@ Repositorio para la asignatura Desarollo de Aplicaciones para Dispositivos Movil
 
 ## Reto0:
 Hola Mundo en Android Studio
+
+## Reto1:
+Documento y Presentación para el projecto
