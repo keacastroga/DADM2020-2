@@ -7,3 +7,6 @@ Hola Mundo en Android Studio
 
 ## Reto1:
 Documento y Presentación para el projecto
+
+## Reto3:
+Interfaz gráfica con proyecto Tic-Tac-Toe
