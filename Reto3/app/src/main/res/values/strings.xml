@@ -6,7 +6,7 @@
     <string name="result_tie">It\'s a tie.</string>
     <string name="result_human_wins">You won!</string>
     <string name="result_computer_wins">Android won!</string>
-    <string name="humanScore">Human:%d</string>
-    <string name="tieScore">Ties:%d</string>
-    <string name="compScore">Android:%d</string>
+    <string name="humanScore">Human: %d</string>
+    <string name="tieScore">Ties: %d</string>
+    <string name="compScore">Android: %d</string>
 </resources>
