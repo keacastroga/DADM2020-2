@@ -11,5 +11,8 @@ Documento y Presentación para el projecto
 ## Reto3:
 Interfaz gráfica con proyecto Tic-Tac-Toe
 
-## Reto3:
+## Reto4:
 Menus y Dialogos con proyecto Tic-Tac-Toe
+
+## Reto5:
+Graficos y Audio con Tic-Tac-Toe
