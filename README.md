@@ -16,3 +16,6 @@ Menus y Dialogos con proyecto Tic-Tac-Toe
 
 ## Reto5:
 Graficos y Audio con Tic-Tac-Toe
+
+## Reto6
+Menu Preferencias en Tic-Tac-Toe
