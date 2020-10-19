@@ -22,7 +22,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.view.menu.MenuBuilder
 
 
-class MainActivity : AppCompatActivity() {
+class SinglePlayerActivity : AppCompatActivity() {
     private lateinit var mGame: TicTacToeGame
     private lateinit var mInfoTextView: TextView
     private lateinit var mHumanWinText: TextView
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_single)
 
         mInfoTextView = findViewById(R.id.information)
 

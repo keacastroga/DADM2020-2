@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="co.edu.unal.tictactoe">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -9,14 +10,20 @@
         android:roundIcon="@mipmap/icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Settings" android:label="Settings"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MultiPlayerActivity"></activity>
+        <activity android:name=".RoomListActivity" />
+        <activity android:name=".MultiLoginActivity" />
+        <activity android:name=".MainMenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Settings"
+            android:label="Settings" />
+        <activity android:name=".SinglePlayerActivity" />
     </application>
 
 </manifest>
