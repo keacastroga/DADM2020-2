@@ -25,11 +25,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/board" />
 
-    <Button
-        android:id="@+id/pokeButton"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/multi_info"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="POKE!"
+        android:text="@string/multi_info"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/information" />

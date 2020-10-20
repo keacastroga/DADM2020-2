@@ -40,6 +40,7 @@ class RoomListActivity : AppCompatActivity() {
             button.isEnabled = false
             roomName = playerName
             roomRef = database.getReference("rooms/$roomName/player1")
+            database.getReference("rooms/$roomName/player2").setValue("")
             addRoomEventListener()
             roomRef.setValue(playerName)
         }
@@ -61,7 +62,8 @@ class RoomListActivity : AppCompatActivity() {
                 button.isEnabled = true
                 val intent = Intent(applicationContext, MultiPlayerActivity::class.java)
                 intent.putExtra("roomName", roomName)
-                startActivity(intent)
+                startActivityForResult(intent,0)
+                roomRef.removeEventListener(this)
             }
 
             override fun onCancelled(error: DatabaseError) {
@@ -70,6 +72,11 @@ class RoomListActivity : AppCompatActivity() {
                 Toast.makeText(this@RoomListActivity, "ERROR!", Toast.LENGTH_SHORT).show()
             }
         })
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        finish()
     }
 
     private fun addRoomsEventListener(){

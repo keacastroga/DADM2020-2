@@ -175,7 +175,6 @@ public class TicTacToeGame {
             mBoard[location] = player;
             return true;
         }else {
-            mBoard[location] = player;
             return false;
         }
     }

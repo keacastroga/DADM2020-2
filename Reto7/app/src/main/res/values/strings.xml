@@ -1,14 +1,18 @@
 <resources>
     <string name="app_name">Tic-Tac-Toe</string>
     <string name="first_human">You go first.</string>
+    <string name="waiting_player">Waiting for opponent to join.</string>
     <string name="turn_human">Your turn.</string>
+    <string name="turn_opponent">Opponent\'s turn.</string>
     <string name="turn_computer">Android\'s turn.</string>
     <string name="result_tie">It\'s a tie.</string>
     <string name="result_human_wins">You won!</string>
+    <string name="result_human_loses">You lost!</string>
     <string name="result_computer_wins">Android won!</string>
     <string name="humanScore">Human: %d</string>
     <string name="tieScore">Ties: %d</string>
     <string name="compScore">Android: %d</string>
+    <string name="multi_info">You are the %1$s, playing against %2$s.</string>
     <string name="difficulty_choose">Choose a difficulty level:</string>
     <string name="difficulty_easy">Easy</string>
     <string name="difficulty_harder">Harder</string>

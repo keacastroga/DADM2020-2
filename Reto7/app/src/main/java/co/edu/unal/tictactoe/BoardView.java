@@ -100,4 +100,9 @@ public class BoardView extends View {
         }
 
     }
+
+    @Override
+    public boolean performClick() {
+        return super.performClick();
+    }
 }
