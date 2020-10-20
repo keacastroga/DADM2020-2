@@ -19,3 +19,6 @@ Graficos y Audio con Tic-Tac-Toe
 
 ## Reto6
 Menu Preferencias en Tic-Tac-Toe
+
+## Reto7
+Juego online en Tic-Tac-Toe

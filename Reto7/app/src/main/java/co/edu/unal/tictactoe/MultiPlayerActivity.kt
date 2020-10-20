@@ -5,9 +5,10 @@ import android.content.SharedPreferences
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.MotionEvent
 import android.view.View
-import android.widget.ArrayAdapter
 import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.database.*
@@ -102,8 +103,8 @@ class MultiPlayerActivity : AppCompatActivity() {
             val opponentRef = database.getReference("rooms/$roomName/player2")
             opponentRef.addValueEventListener(object : ValueEventListener{
                 override fun onDataChange(snapshot: DataSnapshot) {
-                    opponentName = snapshot.getValue(String::class.java)!!
-                    if(opponentName != ""){
+                    if(snapshot.exists()) {
+                        opponentName = snapshot.getValue(String::class.java)!!
                         opponentRef.removeEventListener(this)
                     }
                 }
@@ -133,7 +134,7 @@ class MultiPlayerActivity : AppCompatActivity() {
                         return
                     }else if(snapshot.getValue(String::class.java)!! == "guest:done"){
                         mOpponentFound = false
-                        database.getReference("rooms/$roomName/player2").setValue("")
+                        //database.getReference("rooms/$roomName/player2").setValue("")
                         startNewGame()
                         return
                     }
@@ -208,7 +209,7 @@ class MultiPlayerActivity : AppCompatActivity() {
                 if(mMyTurn){
                     mInfoTextView.text = getString(R.string.result_human_wins)
                 }else{
-                    mInfoTextView.text = getString(R.string.result_human_wins)
+                    mInfoTextView.text = getString(R.string.result_human_loses)
                 }
             }
         }
@@ -216,13 +217,15 @@ class MultiPlayerActivity : AppCompatActivity() {
 
 
     override fun onBackPressed() {
-        super.onBackPressed()
         message = "$role:done"
         messageRef.setValue(message)
         setResult(Activity.RESULT_CANCELED)
         mMyMediaPlayer.release()
         mOpponentMediaPlayer.release()
-        finish()
+        Handler(Looper.getMainLooper()).postDelayed({
+            super.onBackPressed()
+            finish()
+        }, 100)
     }
 
     inner class MyTouchListener : View.OnTouchListener{

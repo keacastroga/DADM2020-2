@@ -36,11 +36,8 @@ class RoomListActivity : AppCompatActivity() {
         button = findViewById(R.id.newRoomButton)
 
         button.setOnClickListener {
-            button.text = "CREATING ROOM"
-            button.isEnabled = false
             roomName = playerName
             roomRef = database.getReference("rooms/$roomName/player1")
-            database.getReference("rooms/$roomName/player2").setValue("")
             addRoomEventListener()
             roomRef.setValue(playerName)
         }
@@ -58,8 +55,6 @@ class RoomListActivity : AppCompatActivity() {
     private fun addRoomEventListener() {
         roomRef.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
-                button.text = "CREATE ROOM"
-                button.isEnabled = true
                 val intent = Intent(applicationContext, MultiPlayerActivity::class.java)
                 intent.putExtra("roomName", roomName)
                 startActivityForResult(intent,0)
@@ -67,8 +62,6 @@ class RoomListActivity : AppCompatActivity() {
             }
 
             override fun onCancelled(error: DatabaseError) {
-                button.text = "CREATE ROOM"
-                button.isEnabled = true
                 Toast.makeText(this@RoomListActivity, "ERROR!", Toast.LENGTH_SHORT).show()
             }
         })
@@ -76,7 +69,8 @@ class RoomListActivity : AppCompatActivity() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        finish()
+        addRoomsEventListener()
+
     }
 
     private fun addRoomsEventListener(){
