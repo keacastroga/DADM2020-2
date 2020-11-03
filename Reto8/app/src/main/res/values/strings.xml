@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Directorio</string>
+    <string name="action_settings">Opciones</string>
+    <string name="Add_New">Añadir Nuevo</string>
+    <string name="edit">Editar Contacto</string>
+    <string name="delete">Borrar Contacto</string>
+    <string name="title_activity_display_contact">Contacto</string>
+    <string name="name">Nombre</string>
+    <string name="phone">Teléfono</string>
+    <string name="email">Email</string>
+    <string name="url">URL</string>
+    <string name="products">Productos/Servicios</string>
+    <string name="classification">Clasificación</string>
+    <string name="save">Guardar Contacto</string>
+    <string name="deleteContact">¿Esta seguro que desea borrar el contacto?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="software_development_companies">Empresas de desarrollo de software</string>
+    <string name="search_title">Buscar</string>
+    <string name="search_hint">Buscar por nombre</string>
+    <string-array name="classification_array">
+        <item>Consultoría</item>
+        <item>Desarrollo a la medida</item>
+        <item>Fábrica de software</item>
+    </string-array>
+    <string-array name="search_array">
+        <item>Todos</item>
+        <item>Consultoría</item>
+        <item>Desarrollo a la medida</item>
+        <item>Fábrica de software</item>
+    </string-array>
+</resources>

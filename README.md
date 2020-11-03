@@ -22,3 +22,6 @@ Menu Preferencias en Tic-Tac-Toe
 
 ## Reto7
 Juego online en Tic-Tac-Toe
+
+## Reto8
+SQLite con app Directorio

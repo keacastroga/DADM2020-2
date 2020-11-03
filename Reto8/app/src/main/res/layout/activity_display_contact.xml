@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DisplayContact" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextName"
+            android:layout_alignParentLeft="true"
+            android:text="@string/name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="110dp"
+            android:ems="10"
+            android:inputType="text"
+            android:layout_marginStart="120dp"
+            android:layout_alignParentStart="true">
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextPhone"
+            android:layout_alignLeft="@+id/textView1"
+            android:text="@string/phone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignStart="@+id/textView1" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextEmail"
+            android:layout_below="@+id/editTextName"
+            android:ems="10"
+            android:inputType="phone|text"
+            android:layout_alignStart="@+id/editTextEmail" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editTextURL"
+            android:layout_alignLeft="@+id/textView5"
+            android:text="@string/email"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignStart="@+id/textView5" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextName"
+            android:layout_below="@+id/editTextPhone"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:layout_alignStart="@+id/editTextName">
+        </EditText>
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextURL"
+            android:layout_alignLeft="@+id/textView1"
+            android:text="@string/url"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignStart="@+id/textView1" />
+
+        <EditText
+            android:id="@+id/editTextURL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextEmail"
+            android:layout_below="@+id/editTextEmail"
+            android:ems="10"
+            android:inputType="textUri"
+            android:layout_alignStart="@+id/editTextEmail" />
+
+
+        <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextProduct"
+        android:layout_alignBottom="@+id/editTextProduct"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/editTextURL"
+        android:text="@string/products"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/editTextURL" />
+
+
+        <EditText
+            android:id="@+id/editTextProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/editTextName"
+            android:layout_below="@+id/editTextURL"
+            android:ems="10"
+            android:inputType="text"
+            android:layout_alignEnd="@+id/editTextName" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextClassification"
+            android:layout_alignBottom="@+id/editTextClassification"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/editTextProduct"
+            android:text="@string/classification"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/editTextProduct" />
+
+
+        <Spinner
+            android:id="@+id/editTextClassification"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/editTextName"
+            android:layout_below="@+id/editTextProduct"
+            android:ems="10"
+            android:inputType="text"
+            android:layout_alignEnd="@+id/editTextName" />
+
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextClassification"
+            android:layout_alignParentBottom="true"
+            android:onClick="run"
+            android:text="@string/save" />
+
+    </RelativeLayout>
+</ScrollView>
