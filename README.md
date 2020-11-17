@@ -25,3 +25,6 @@ Juego online en Tic-Tac-Toe
 
 ## Reto8
 SQLite con app Directorio
+
+## Reto9
+Puntos de interes con OpenStreetMap, osmdroid
