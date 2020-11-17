@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<EditTextPreference
+    android:defaultValue="1"
+    android:key="distance"
+    android:inputType="number"
+    android:title="Radio de distancia (Km)"/>
+</PreferenceScreen>
