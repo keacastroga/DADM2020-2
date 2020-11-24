@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Oferta de Viviendas Nuevas</string>
+    <string-array name="locations_tag_array">
+        <item>supermarket</item>
+        <item>mall</item>
+        <item>restaurant</item>
+        <item>fuel</item>
+        <item>place of worship</item>
+        <item>cinema</item>
+        <item>police</item>
+        <item>park</item>
+    </string-array>
+    <string-array name="locations_name_array">
+        <item>Supermercado</item>
+        <item>Centro Comercial</item>
+        <item>Restaurante</item>
+        <item>Estacion de servicio</item>
+        <item>Iglesia</item>
+        <item>Cinema</item>
+        <item>Estacion de policia</item>
+        <item>Parque</item>
+    </string-array>
+</resources>
