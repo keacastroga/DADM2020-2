@@ -35,4 +35,4 @@ SQLite con app Directorio
 Puntos de interes con OpenStreetMap, osmdroid
 
 ## Reto10
-Mapa de viviendas disponibles usando Open Data de Colombia
+Acceso a Open Data de colombia con app Oferta de Viviendas Nuevas

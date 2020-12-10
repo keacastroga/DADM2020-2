@@ -1,6 +1,7 @@
 package co.edu.unal.openmaptutorial
 
 import android.Manifest
+import android.content.Context
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.preference.PreferenceManager
@@ -8,6 +9,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
 import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
@@ -106,6 +108,11 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.search_button).setOnClickListener {
             poiMarkers.items.clear()
             getViviendas()
+            val view = this.currentFocus
+            view?.let{v ->
+                val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as? InputMethodManager
+                imm?.hideSoftInputFromWindow(v.windowToken, 0)
+            }
         }
     }
 
