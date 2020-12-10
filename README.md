@@ -1,4 +1,9 @@
-# DADM2020-2
+# DADM2020-2 Projecto
+Link repositorio del projecto App DecorAR: https://github.com/seradiazpin/DecorAR-unal/
+La carpeta Projecto contiene poster, video y reporte.
+
+
+# DADM2020-2 Retos
 
 Repositorio para la asignatura Desarollo de Aplicaciones para Dispositivos Moviles UNAL 2020.
 
@@ -28,3 +33,6 @@ SQLite con app Directorio
 
 ## Reto9
 Puntos de interes con OpenStreetMap, osmdroid
+
+## Reto10
+Mapa de viviendas disponibles usando Open Data de Colombia

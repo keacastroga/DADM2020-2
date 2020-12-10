@@ -14,16 +14,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b4f15bd-f6e3-40f8-baec-d99d9cbc6b3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_house_24.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reto9/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Reto9/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reto9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Reto9/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2020_11_16_22_17_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[ad786abf]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -161,13 +160,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605608632561</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Reto10 Viviendas">
+      <created>1606195279966</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606195279966</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="GPS Map Done" />
     <MESSAGE value="FIX" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIX" />
+    <MESSAGE value="Reto10 Viviendas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reto10 Viviendas" />
   </component>
   <component name="WindowStateProjectService">
     <state x="477" y="301" key="#PSD" timestamp="1605592039443">
@@ -190,10 +197,10 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="540" y="310" key="AndroidCreateResourceFileDialog/0.30.1920.1050/1920.30.1600.870@0.30.1920.1050" timestamp="1605604840709" />
-    <state x="595" y="124" key="CommitChangelistDialog2" timestamp="1605608631856">
+    <state x="595" y="124" key="CommitChangelistDialog2" timestamp="1606195278127">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="595" y="124" key="CommitChangelistDialog2/0.30.1920.1050/1920.30.1600.870@0.30.1920.1050" timestamp="1605608631856" />
+    <state x="595" y="124" key="CommitChangelistDialog2/0.30.1920.1050/1920.30.1600.870@0.30.1920.1050" timestamp="1606195278127" />
     <state width="1876" height="245" key="GridCell.Tab.0.bottom" timestamp="1606194997693">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
@@ -230,10 +237,10 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="461" y="200" key="SettingsEditor/0.30.1920.1050/1920.30.1600.870@0.30.1920.1050" timestamp="1605591947694" />
-    <state x="560" y="288" key="Vcs.Push.Dialog.v2" timestamp="1605608633991">
+    <state x="560" y="288" key="Vcs.Push.Dialog.v2" timestamp="1606195282949">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="560" y="288" key="Vcs.Push.Dialog.v2/0.30.1920.1050/1920.30.1600.870@0.30.1920.1050" timestamp="1605608633991" />
+    <state x="560" y="288" key="Vcs.Push.Dialog.v2/0.30.1920.1050/1920.30.1600.870@0.30.1920.1050" timestamp="1606195282949" />
     <state x="736" y="194" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1606184678673">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
